@@ -1,5 +1,5 @@
 # Data-Converters
-A small group of converters for things like temperature(upcoming) and storage(e.g bytes to kilobytes).
+A small group of converters for things like temperature and storage(e.g bytes to kilobytes).
 ___
 ## Usage
 The converters can be used by running 'main.py'.
