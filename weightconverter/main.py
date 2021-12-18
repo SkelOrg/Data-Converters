@@ -6,10 +6,10 @@ if type1 in weightTypes.pounds:
     type2 = str(input("Enter a type of weight to convert to: "))
 
     if type2 in weightTypes.kilograms:
-        weight = weight * 0.453592
+        weight = lbsToKg(weight)
         print(f"Weight in kilograms: {weight}")
     elif type2 in weightTypes.stone:
-        weight = weight * 0.0714286
+        weight = lbsToSt(weight)
         print(f"Weight in stone: {weight}")
     else:
         print("Invalid weight type")
@@ -18,10 +18,10 @@ elif type1 in weightTypes.kilograms:
     type2 = str(input("Enter a type of weight to convert to: "))
 
     if type2 in weightTypes.pounds:
-        weight = weight * 2.20462
+        weight = kgToLbs(weight)
         print(f"Weight in pounds: {weight}")
     elif type2 in weightTypes.stone:
-        weight = weight * 0.157473
+        weight = kgToSt(weight)
         print(f"Weight in stone: {weight}")
     else:
         print("Invalid weight type")
@@ -30,10 +30,10 @@ elif type1 in weightTypes.stone:
     type2 = str(input("Enter a type of weight to convert to: "))
 
     if type2 in weightTypes.pounds:
-        weight = weight * 14
+        weight = stToLbs(weight)
         print(f"Weight in pounds: {weight}")
     elif type2 in weightTypes.kilograms:
-        weight = weight * 6.35029
+        weight = stToKg(weight)
         print(f"Weight in kilograms: {weight}")
     else:
         print("Invalid weight type")
